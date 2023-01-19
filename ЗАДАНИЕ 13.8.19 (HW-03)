@@ -1,0 +1,16 @@
+tickets = int(input("Ввести колич билетов"))
+age = int(input("Ввести возраст"))
+n = 990
+b = 1390
+if (age < 18):
+    print("проход бесплатный")
+elif tickets <= 3 and 18 <= age <= 25:
+    print("Сумма за билеты", n * tickets)
+elif tickets > 3 and 18 <= age <= 25:
+    print("Стоимость", n * tickets - n * tickets * 10 / 100)
+elif tickets <= 3 and age > 25:
+    print("Сумма за билеты", b * tickets)
+elif tickets > 3 and age > 25:
+    print("Стоимость", b * tickets - b * tickets * 10 / 100)
+else:
+    print()
